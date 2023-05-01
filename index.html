@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <script>
+    function validate() {
+      const username = document.querySelector('#username').value
+      const password =  document.querySelector('#password').value
+      document.querySelector('#status').innerHTML = 
+          (username === "myusername" && password === "mypassword") ? "Success": "Invalid username or password";
+    }
+  </script>
+</head>
+<body >
+  <h1>Login</h1>
+  <form onsubmit="validate(); return false;">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <button type="submit">Login</button>
+  </form>
+  <div id="status"></div>
+</body>
+</html>
