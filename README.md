@@ -34,7 +34,7 @@ This command will run the same test file in headless mode and output the test re
 
 ## Writing Tests
 
-To write new tests, create a new `.cy.js` file in the `cypress/integration` directory. You can use the `login.spec.cy.js` file as a template.
+To write new tests, create a new `.cy.js` file in the `cypress/e2e/your_folder` directory. You can use the `login.spec.cy.js` file as a template.
 
 ## Contributing
 
